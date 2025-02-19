@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="com.aventstack.chaintest.plugins.ChainTestListener" />
+	</listeners>
+	<test thread-count="5" name="Test1" parallel="tests">
+		<classes>
+			<class name="testCases.signup.TC001_SignupPagePositiveTest" />
+		</classes>
+	</test>
+
+	<test thread-count="5" name="Test2" parallel="tests">
+		<classes>
+			<class name="testCases.signupPopup.TC001_SignupPopupPositiveTest" />
+		</classes>
+	</test>
+</suite> <!--
+Suite -->
+
